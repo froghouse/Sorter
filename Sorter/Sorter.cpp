@@ -2,14 +2,10 @@
 //
 
 #include "stdafx.h"
-#include "InputGen.h"
-#include "Bubble.h"
 
 int main()
 {
-	InputGen generator;
-	generator.setSize(10);
-	generator.generate();
+	InputGen generator(10);
 
 	Algo *test = new Bubble(generator.getInput());
 	test->result();

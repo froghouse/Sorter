@@ -8,6 +8,7 @@ InputGen::InputGen() {
 }
 
 InputGen::InputGen(size_t s) {
+	size = s;
 	generate();
 }
 
